@@ -1,11 +1,20 @@
 <template>
   <div class="header">
     <div class="header__container">
-      <div class="header__title">NOMAD it</div>
+      <RouterLink :to="{ name: 'home' }" class="header__title">NOMAD it</RouterLink>
       <ul class="header__row">
-        <li><a href="">О нас</a></li>
-        <li><a href="">Обучение </a></li>
-        <li><a href="">Кейсы</a></li>
+        <li>
+          <RouterLink :to="{ name: 'AboutUs' }" href="">О нас</RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'Courses' }" href="">Обучение </RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'CasesDev' }" href="">Кейсы DEV</RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'CasesDesign' }" href="">Кейсы Design</RouterLink>
+        </li>
       </ul>
       <HeaderBurger />
     </div>
@@ -21,6 +30,7 @@ import HeaderBurger from './burger/HeaderBurger.vue'
 .header {
   height: 125px;
   background-color: #000;
+  z-index: 999;
 
 
   &__container {
