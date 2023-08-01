@@ -7,7 +7,7 @@
           <RouterLink :to="{ name: 'AboutUs' }" href="">О нас</RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'Courses' }" href="">Обучение </RouterLink>
+          <RouterLink :to="{ name: 'Courses' }" href="">Мастер-классы </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'CasesDev' }" href="">Кейсы DEV</RouterLink>
