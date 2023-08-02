@@ -23,8 +23,11 @@ import ServicesSlogans from './slogans/ServicesSlogans.vue'
 
   &__container {
     display: flex;
+    gap: 45px;
     flex-direction: column;
   }
+
+
 
   &__title {
     color: #FFF;
@@ -40,7 +43,7 @@ import ServicesSlogans from './slogans/ServicesSlogans.vue'
   &__box {
     width: 100%;
     display: flex;
-    gap: 50px;
+    gap: 100px;
     align-items: center;
   }
 }
