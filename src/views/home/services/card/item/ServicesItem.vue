@@ -1,10 +1,10 @@
 <template>
-  <div class="item" @mouseenter="serviceStore.setCurrentCard(cardNumber)">
+  <RouterLink :to="{ name: pageName }" class="item" @mouseenter="serviceStore.setCurrentCard(cardNumber)">
     <div class="item__back">
       Выбрать
     </div>
     <div class="item__image"><img :src="imgSrc" alt=""></div>
-  </div>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
@@ -17,6 +17,7 @@ defineProps<{
   cardNumber: number
   serviceName: string
   imgSrc: string
+  pageName: string
 }>()
 </script>
 
