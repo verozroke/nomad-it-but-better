@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -9,22 +9,22 @@ const router = createRouter({
       component: () => import('@/views/home/HomeView.vue')
     },
     {
-      path: '/',
+      path: '/about-us',
       name: 'AboutUs',
       component: () => import('@/views/about-us/AboutUsView.vue')
     },
     {
-      path: '/',
+      path: '/courses',
       name: 'Courses',
       component: () => import('@/views/courses/CoursesView.vue')
     },
     {
-      path: '/',
+      path: '/dev-cases',
       name: 'CasesDev',
       component: () => import('@/views/cases-dev/CasesDevView.vue')
     },
     {
-      path: '/',
+      path: '/design-cases',
       name: 'CasesDesign',
       component: () => import('@/views/cases-design/CasesDesignView.vue')
     },
