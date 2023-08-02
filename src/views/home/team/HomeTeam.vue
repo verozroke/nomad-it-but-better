@@ -22,6 +22,7 @@ import TeamList from './list/TeamList.vue'
     font-family: 'Inter', sans-serif;
     font-size: 50px;
     font-style: normal;
+    text-align: center;
     font-weight: 700;
     line-height: normal;
     z-index: 1;

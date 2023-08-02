@@ -1,9 +1,10 @@
 <template>
-  <CasesGrid />
+  <div>
+
+  </div>
 </template>
 
 <script setup lang="ts">
-import CasesGrid from '../../components/case-grid/CasesGrid.vue'
 
 </script>
 
