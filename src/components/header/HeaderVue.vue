@@ -1,8 +1,9 @@
 <template>
   <div class="header">
     <div class="header__container">
-      <RouterLink :to="{ name: 'home' }" class="header__title">NOMAD it</RouterLink>
-      <ul class="header__row">
+      <RouterLink :to="{ name: 'home' }" class="header__title" :style="{ flex: headerStore.isMobile ? '1 1 auto' : '' }">
+        NOMAD it</RouterLink>
+      <ul class="header__row" v-if="!headerStore.isMobile">
         <li>
           <RouterLink :to="{ name: 'AboutUs' }" href="">О нас</RouterLink>
         </li>
@@ -16,13 +17,17 @@
           <RouterLink :to="{ name: 'CasesDesign' }" href="">Кейсы Design</RouterLink>
         </li>
       </ul>
-      <HeaderBurger />
+      <HeaderBurger v-if="headerStore.isMobile" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useHeaderStore } from '@/stores/HeaderStore';
 import HeaderBurger from './burger/HeaderBurger.vue'
+
+
+const headerStore = useHeaderStore()
 
 </script>
 
@@ -63,6 +68,7 @@ import HeaderBurger from './burger/HeaderBurger.vue'
       padding: 5px 20px;
       border-radius: 5px;
       line-height: normal;
+      word-wrap: normal;
       color: transparent;
       background:
         linear-gradient(90deg, #fff 50%, #fff 0),
