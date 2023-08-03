@@ -3,7 +3,7 @@
     <div class="item__card">
       <div class="item__overlay"></div>
       <div class="item__image">
-        <img :src="src" alt="">
+
       </div>
       <div class="item__name">
         {{ name }}
@@ -48,7 +48,6 @@ defineProps({
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1em;
     padding: 36px 65px;
     width: 100%;
     height: 324px;
@@ -78,19 +77,6 @@ defineProps({
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  }
-
-  &__image {
-    width: 100%;
-    height: 200px;
-
-    & img {
-      z-index: 999;
-      border-radius: 26px;
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
   }
 }
 </style>

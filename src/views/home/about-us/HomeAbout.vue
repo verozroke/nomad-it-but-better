@@ -91,4 +91,53 @@
   }
 
 }
+
+@media only screen and (max-width: 1156px) {
+  .about {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__info {
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+  .about {
+
+    &__text {
+      font-size: 22px;
+    }
+
+    &__circle {
+      & img {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 460px) {
+  .about {
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__circle {
+      & img {
+        transform: scale(.7);
+      }
+    }
+  }
+}
 </style>

@@ -1,5 +1,26 @@
 <script setup lang="ts">
+import { nextTick, onMounted } from 'vue';
 import HeaderVue from './components/header/HeaderVue.vue';
+import { useHeaderStore } from './stores/HeaderStore';
+
+const headerStore = useHeaderStore()
+
+const onResize = () => {
+  if (window.innerWidth < 980) {
+    headerStore.isMobile = true
+  } else if (window.innerWidth >= 980) {
+    headerStore.isMobile = false
+  }
+}
+
+onMounted(() => {
+  onResize()
+  nextTick(() => {
+    window.addEventListener('resize', onResize)
+  })
+
+
+})
 </script>
 
 <template>
