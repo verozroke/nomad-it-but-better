@@ -63,4 +63,12 @@ const slogans = ref([
   left: -60px;
   transition: .4s;
 }
+
+
+
+@media only screen and (max-width: 1220px) {
+  .slogans {
+    display: none;
+  }
+}
 </style>

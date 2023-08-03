@@ -1,6 +1,7 @@
 <template>
   <div class="list">
-    <TeamItem v-for="member in members" :key="member.id" :name="member.name" :occupation="member.occupation" />
+    <TeamItem v-for="member in members" :key="member.id" :name="member.name" :occupation="member.occupation"
+      :src="member.src" />
   </div>
 </template>
 
@@ -12,53 +13,40 @@ import { ref } from 'vue'
 const members = ref([
   {
     id: 1,
-    name: 'Мухамеджан',
-    src: '',
-    occupation: 'gay and homosexual',
+    name: 'Асхат',
+    src: '/team-photos/askhat.jpg',
+    occupation: 'Full-stack Разработчик',
   },
   {
     id: 2,
-    name: 'Мухамеджан',
-    src: '',
-    occupation: 'gay and homosexual',
+    name: 'Владислав',
+    src: '/team-photos/vlad.jpg',
+    occupation: 'Full-stack Разработчик',
   },
   {
     id: 3,
-    name: 'Мухамеджан',
-    src: '',
-    occupation: 'gay and homosexual',
+    name: 'Сабыржан',
+    src: '/team-photos/sabyr.jpg',
+    occupation: 'Full-stack Разработчик',
   },
   {
     id: 4,
-    name: 'Мухамеджан',
-    src: '',
-    occupation: 'gay and homosexual',
+    name: 'Маулен',
+    src: '/team-photos/maulen.jpg',
+    occupation: 'Frontend Разработчик',
   },
   {
     id: 5,
-    name: 'Мухамеджан',
-    src: '',
-    occupation: 'gay and homosexual',
+    name: 'Алим',
+    src: '/team-photos/alim.jpg',
+    occupation: 'UI/UX Дизайнер',
   },
   {
     id: 6,
-    name: 'Мухамеджан',
-    src: '',
-    occupation: 'gay and homosexual',
-  },
-  {
-    id: 7,
-    name: 'Мухамеджан',
-    src: '',
-    occupation: 'gay and homosexual',
-  },
-  {
-    id: 8,
-    name: 'Мухамеджан',
-    src: '',
-    occupation: 'gay and homosexual',
-  },
-
+    name: 'Ыдырыс',
+    src: '/team-photos/idris.jpg',
+    occupation: 'Backend Разработчик',
+  }
 ])
 
 </script>

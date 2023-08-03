@@ -81,4 +81,22 @@ import HeroCard from './card/HeroCard.vue'
 
   }
 }
+
+
+@media only screen and (max-width: 824px) {
+  .hero {
+    &__title {
+      font-size: 42px;
+      width: 80%;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &__button-text {
+      font-size: 14px;
+    }
+  }
+}
 </style>

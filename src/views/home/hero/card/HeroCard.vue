@@ -36,4 +36,12 @@
     filter: blur(200px);
   }
 }
+
+
+
+@media only screen and (max-width: 824px) {
+  .card {
+    width: 70%;
+  }
+}
 </style>

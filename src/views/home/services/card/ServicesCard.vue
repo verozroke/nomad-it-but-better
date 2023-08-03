@@ -46,4 +46,12 @@ const items = ref([
   background: linear-gradient(139deg, rgba(183, 183, 183, 0.20) 0%, rgba(129, 129, 129, 0.20) 100%);
   backdrop-filter: blur(7.5px);
 }
+
+
+@media only screen and (max-width: 920px) {
+  .card {
+    flex-direction: column;
+    width: 90%;
+  }
+}
 </style>

@@ -42,9 +42,21 @@ import ServicesSlogans from './slogans/ServicesSlogans.vue'
 
   &__box {
     width: 100%;
+    justify-content: center;
     display: flex;
     gap: 100px;
     align-items: center;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1220px) {
+  .services {
+    &__title {
+      text-align: center;
+    }
   }
 }
 </style>

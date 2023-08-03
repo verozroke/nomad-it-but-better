@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header__container">
-      <RouterLink :to="{ name: 'home' }" class="header__title" :style="{ flex: headerStore.isMobile ? '1 1 auto' : '' }">
+      <RouterLink :to="{ name: 'Home' }" class="header__title" :style="{ flex: headerStore.isMobile ? '1 1 auto' : '' }">
         NOMAD it</RouterLink>
       <ul class="header__row" v-if="!headerStore.isMobile">
         <li>

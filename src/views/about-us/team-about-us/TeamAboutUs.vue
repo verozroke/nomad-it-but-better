@@ -11,7 +11,7 @@
           <br>
           Впервую очередь мы заинтересованы в реализации ваших замечательных идей!
         </div>
-        <v-btn @click="scrollDown('team-info')" variant="outlined">ПОЗНАКОМИТЬСЯ С НАШЕЙ КОМАНДОЙ</v-btn>
+        <v-btn @click="scrollDown('team-list')" variant="outlined">Далее</v-btn>
       </div>
     </div>
   </v-parallax>
@@ -72,6 +72,44 @@ function scrollDown(blockID: string) {
 
   .v-btn {
     width: 40%;
+  }
+}
+
+
+@media only screen and (max-width: 1052px) {
+  .about-us {
+    &__container {
+      padding: 20px 50px;
+
+    }
+
+    &__title {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .about-us {
+    &__text {
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  .about-us {
+    &__text {
+      font-size: 14px;
+      width: 100%;
+    }
+
+    &__container {
+      padding: 20px 20px;
+    }
   }
 }
 </style>

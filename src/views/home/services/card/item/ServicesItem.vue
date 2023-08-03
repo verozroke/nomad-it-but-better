@@ -1,7 +1,7 @@
 <template>
   <RouterLink :to="{ name: pageName }" class="item" @mouseenter="serviceStore.setCurrentCard(cardNumber)">
     <div class="item__back">
-      Выбрать
+      {{ serviceName }}
     </div>
     <div class="item__image"><img :src="imgSrc" alt=""></div>
   </RouterLink>
@@ -35,6 +35,7 @@ defineProps<{
       transition: .4s;
     }
   }
+
 
   &__back {
     padding: 20px 0;

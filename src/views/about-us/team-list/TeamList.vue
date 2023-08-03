@@ -1,5 +1,5 @@
 <template>
-  <div class="team">
+  <div class="team" id="team-list">
     <div class="team__container">
       <div class="team__title">Команда</div>
       <TeamRow />

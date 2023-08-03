@@ -63,4 +63,35 @@ function scrollDown(blockID: string) {
     font-size: 24px;
   }
 }
+
+
+@media only screen and (max-width: 1052px) {
+  .hero {
+    &__title {
+      padding: 0 50px;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 705px) {
+  .hero {
+    &__title {
+      font-size: 32px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 440px) {
+  .hero {
+    &__title {
+      padding: 0 20px;
+      font-size: 24px;
+    }
+  }
+}
 </style>
