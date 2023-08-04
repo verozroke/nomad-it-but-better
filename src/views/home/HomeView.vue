@@ -3,6 +3,7 @@ import HomeHero from './hero/HomeHero.vue'
 import HomeTeam from './team/HomeTeam.vue'
 import HomeServices from './services/HomeServices.vue'
 import HomeAbout from './about-us/HomeAbout.vue'
+import HomeStages from './stages/HomeStages.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import HomeAbout from './about-us/HomeAbout.vue'
     <HomeServices />
     <HomeTeam />
     <HomeAbout />
+    <HomeStages />
   </div>
 </template>
 
