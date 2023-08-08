@@ -19,7 +19,7 @@ import ServicesSlogans from './slogans/ServicesSlogans.vue'
 <style lang="scss" scoped>
 .services {
   padding: 40px 0;
-  background-color: #000;
+  background-color: #fff;
 
   &__container {
     display: flex;
@@ -30,7 +30,7 @@ import ServicesSlogans from './slogans/ServicesSlogans.vue'
 
 
   &__title {
-    color: #FFF;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 50px;
     font-style: normal;

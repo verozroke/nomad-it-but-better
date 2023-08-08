@@ -2,7 +2,6 @@
   <div class="about">
     <div class="about__container">
       <div class="about__info">
-        <div class="about__overlay"></div>
         <div class="about__title">О нас</div>
         <div class="about__text">Компания с <b>комплексным подходом</b> в работе с бизнесом. Мы работаем над всеми
           задачами
@@ -12,7 +11,8 @@
         </div>
       </div>
       <div class="about__circle">
-        <img src="/about-us.png" alt="">
+        <!-- FIXME: new image -->
+        <!-- <img src="/about-us.png" alt=""> -->
       </div>
     </div>
   </div>
@@ -25,18 +25,8 @@
 <style lang="scss" scoped>
 .about {
   padding: 40px 0;
-  background-color: #000;
+  background-color: #fff;
 
-  &__overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 557px;
-    background: #00053D;
-    filter: blur(200px);
-  }
 
   &__container {
     display: flex;
@@ -55,7 +45,7 @@
   }
 
   &__title {
-    color: #FFF;
+    color: #000;
     z-index: 1;
     font-family: 'Inter', sans-serif;
     font-size: 50px;
@@ -65,7 +55,7 @@
   }
 
   &__text {
-    color: #FFF;
+    color: #000;
     z-index: 1;
     font-family: 'Inter', sans-serif;
     font-size: 30px;

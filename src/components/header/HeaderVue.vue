@@ -34,7 +34,7 @@ const headerStore = useHeaderStore()
 <style lang="scss" scoped>
 .header {
   height: 125px;
-  background-color: #000;
+  background-color: #fff;
   z-index: 999;
 
 
@@ -48,7 +48,7 @@ const headerStore = useHeaderStore()
   }
 
   &__title {
-    color: #FFF;
+    color: #000;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -71,10 +71,10 @@ const headerStore = useHeaderStore()
       word-wrap: normal;
       color: transparent;
       background:
-        linear-gradient(90deg, #fff 50%, #fff 0),
-        linear-gradient(-90deg, #fff 50%, #fff 0),
-        linear-gradient(90deg, #0000 50%, rgba(0, 20, 255, 0.80) 0%, rgba(0, 255, 91, 0.80) 100% 0),
-        linear-gradient(-90deg, #0000 50%, rgba(0, 255, 91, 0.80) 0%, rgba(0, 20, 255, 0.80) 100% 0);
+        linear-gradient(90deg, #000 50%, #fff 0),
+        linear-gradient(-90deg, #000 50%, #fff 0),
+        linear-gradient(90deg, #fff 50%, #000 0%, #000 100% 0),
+        linear-gradient(-90deg, #fff 50%, #000 0%, #000 100% 0);
       background-repeat: no-repeat;
       background-size: 200% 51%;
       background-position: top left, bottom right;

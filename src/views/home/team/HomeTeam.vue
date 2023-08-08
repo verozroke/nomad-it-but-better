@@ -15,10 +15,10 @@ import TeamList from './list/TeamList.vue'
 <style lang="scss" scoped>
 .team {
   padding: 40px 0;
-  background-color: #000;
+  background-color: #fff;
 
   &__title {
-    color: #FFF;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 50px;
     font-style: normal;

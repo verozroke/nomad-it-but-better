@@ -10,7 +10,7 @@ defineProps({
 
 <style scoped>
 .slogan {
-  color: #fff;
+  color: #000;
   font-family: 'Inter', sans-serif;
   font-size: 80px;
   font-style: normal;
