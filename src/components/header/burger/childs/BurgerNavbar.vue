@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { useHeaderStore } from '@/stores/headerStore'
+import { useHeaderStore } from '@/stores/HeaderStore'
 
 const headerStore = useHeaderStore()
 
