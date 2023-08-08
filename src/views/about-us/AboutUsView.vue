@@ -2,14 +2,15 @@
   <div class="team">
     <TeamHero />
     <TeamAboutUs />
-    <TeamList />
+    <AboutTeam />
   </div>
 </template>
 
 <script lang="ts" setup>
 import TeamHero from './team-hero/TeamHero.vue';
 import TeamAboutUs from './team-about-us/TeamAboutUs.vue'
-import TeamList from './team-list/TeamList.vue';
+import AboutTeam from './team-list/AboutTeam.vue';
+
 
 import { onMounted } from 'vue'
 
