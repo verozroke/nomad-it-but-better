@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="bruh" @click="headerStore.burger = true" style="position: relative;">
-      <svg class="hover" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+      <svg class="hover" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="#000">
         <g filter="url(#filter0_b_234_45)">
-          <circle cx="27" cy="27" r="27" fill="#B7B7B7" fill-opacity="0.2" />
+          <circle cx="27" cy="27" r="27" fill="#000" />
         </g>
         <rect x="15.525" y="18.36" width="25.515" height="2.835" rx="1.4175" fill="white" />
         <rect x="10.8" y="25.92" width="30.24" height="2.835" rx="1.4175" fill="white" />
@@ -21,7 +21,7 @@
       <svg style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 1;" class="birdeme"
         xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
         <g filter="url(#filter0_b_234_45)">
-          <circle cx="27" cy="27" r="27" fill="#B7B7B7" fill-opacity="0.2" />
+          <circle cx="27" cy="27" r="27" fill="#000" />
         </g>
         <rect x="15.525" y="18.36" width="25.515" height="2.835" rx="1.4175" fill="white" />
         <rect x="10.8" y="25.92" width="30.24" height="2.835" rx="1.4175" fill="white" />
@@ -68,17 +68,8 @@ const headerStore = useHeaderStore()
   transition: .3s;
 }
 
-.bruh:hover .hover {
-  opacity: 1;
-  transition: .3s;
-  z-index: 999;
-  background: linear-gradient(158deg, rgb(0, 21, 255) 0%, rgb(0, 226, 79) 100%);
-}
 
-.bruh:hover .birdeme {
-  opacity: 0 !important;
-  transition: .3s;
-}
+
 
 .body {
   transition: 0.4s;

@@ -3,7 +3,7 @@
     <ServicesSlogan v-for="slogan in slogans" :key="slogan.id" :slogan-name="slogan.name" />
     <div class="arrow">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 30 36" fill="none">
-        <path d="M30 18L0 35.3205L0 0.679491L30 18Z" fill="#0014FF" />
+        <path d="M30 18L0 35.3205L0 0.679491L30 18Z" fill="#000" />
       </svg>
     </div>
   </div>

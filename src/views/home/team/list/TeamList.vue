@@ -46,6 +46,24 @@ const members = ref([
     name: 'Ыдырыс',
     src: '/team-photos/idris.jpg',
     occupation: 'Backend Разработчик',
+  },
+  {
+    id: 7,
+    name: 'Александр',
+    src: '/team-photos/sanya.jpg',
+    occupation: 'Frontend Разработчик',
+  },
+  {
+    id: 8,
+    name: 'Дарина',
+    src: '/team-photos/darina.jfif',
+    occupation: 'Backend Разработчица',
+  },
+  {
+    id: 9,
+    name: 'Абай',
+    src: '/team-photos/abaz.jpg',
+    occupation: 'Сис. Админ',
   }
 ])
 
