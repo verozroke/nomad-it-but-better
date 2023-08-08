@@ -7,8 +7,8 @@
         <img :src="bannerSrc" alt="">
       </div>
       <div class="card__info">
-        <div class="card__old-price"><span style="color: #000;">{{ oldPrice }} тенге</span></div>
-        <div class="card__price">{{ price }} тенге</div>
+        <!-- <div class="card__old-price"><span style="color: #000;">{{ oldPrice }} тенге</span></div> -->
+        <!-- <div class="card__price">{{ price }} тенге</div> -->
         <div class="card__tunnel">
           <div class="card__duration">
 
