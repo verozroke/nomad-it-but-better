@@ -1,1 +1,0 @@
-import{C as e}from"./CasesGrid-702c6b7b.js";import{d as o,m as s,h as a,o as r}from"./index-2e18e850.js";const _=o({__name:"CasesDevView",setup(n){return s(()=>{window.scrollTo(0,0)}),(t,c)=>(r(),a(e))}});export{_ as default};
