@@ -38,7 +38,7 @@ const cards = ref([
 <style lang="scss" scoped>
 .list {
   padding: 80px 0;
-  background-color: #000;
+  background-color: #fff;
 
   &__container {
     display: flex;
@@ -51,7 +51,7 @@ const cards = ref([
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-size: 50px;
-    color: #fff;
+    color: #000;
     margin-bottom: 80px;
   }
 }

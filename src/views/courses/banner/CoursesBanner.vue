@@ -7,7 +7,7 @@
           style=" font-weight: 500;">Узнать о
           наших доступных
           курсах</v-btn> -->
-        <div @click="scrollDown('workshop-list')" class="banner__button">Узнать более</div>
+        <v-btn @click="scrollDown('workshop-list')" variant="outlined" width="200px">Узнать более</v-btn>
       </div>
     </div>
   </div>

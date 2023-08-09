@@ -7,8 +7,8 @@
         <img :src="bannerSrc" alt="">
       </div>
       <div class="card__info">
-        <div class="card__old-price"><span style="color: #fff;">{{ oldPrice }} тенге</span></div>
-        <div class="card__price">{{ price }} тенге</div>
+        <!-- <div class="card__old-price"><span style="color: #000;">{{ oldPrice }} тенге</span></div> -->
+        <!-- <div class="card__price">{{ price }} тенге</div> -->
         <div class="card__tunnel">
           <div class="card__duration">
 
@@ -62,14 +62,12 @@ const download = (src: string) => {
 .card {
   display: flex;
   padding: 40px;
-  border: 2px solid #7d7d7d;
   flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
-  background: linear-gradient(139deg, rgba(183, 183, 183, 0.20) 0%, rgba(129, 129, 129, 0.20) 100%);
-  backdrop-filter: blur(7.5px);
+  background: #fff;
   filter: drop-shadow(.1em 0 .4em #00000048);
 
   &__title {
@@ -77,7 +75,7 @@ const download = (src: string) => {
     text-align: left;
     font-family: 'Exo 2', sans-serif;
     font-size: 100px;
-    color: #fff;
+    color: #000;
     margin-bottom: 80px;
   }
 
@@ -126,7 +124,7 @@ const download = (src: string) => {
 
     font-size: 70px;
     letter-spacing: 1px;
-    color: #fff;
+    color: #000;
     font-weight: 700;
     margin-bottom: 20px;
   }
@@ -136,10 +134,9 @@ const download = (src: string) => {
     padding: 10px 0;
     display: flex;
     filter: drop-shadow(.1em 0 .4em #00000048);
-    background: linear-gradient(139deg, rgba(183, 183, 183, 0.20) 0%, rgba(129, 129, 129, 0.20) 100%);
-    backdrop-filter: blur(7.5px);
+    background: #fff;
     border: 2px solid #7d7d7d;
-    color: #fff;
+    color: #000;
     margin-bottom: 40px;
   }
 
@@ -153,12 +150,12 @@ const download = (src: string) => {
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    border-right: 1px solid #fff;
+    border-right: 1px solid #000;
   }
 
   &__difficulty {
     font-size: 20px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #000;
     width: 50%;
     font-family: 'Exo 2', sans-serif;
 
@@ -177,7 +174,7 @@ const download = (src: string) => {
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
-    color: #fff;
+    color: #000;
     gap: 1em;
     font-weight: 700;
     margin-bottom: 20px;
