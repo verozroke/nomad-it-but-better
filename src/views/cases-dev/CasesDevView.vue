@@ -8,22 +8,24 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="main">
-    <div class="main__container">
-      <h1 class="main__title">Кейсы програмирования</h1>
+  <div>
+    <main class="main">
+      <div class="main__container">
+        <h1 class="main__title">Кейсы програмирования</h1>
 
-      <div class="main__list">
-        <p class="main__item">создание полноценных веб-сайтов</p>
-        <p class="main__item">front-end</p>
-        <p class="main__item">верстка лендингов</p>
-        <p class="main__item">it-консультация</p>
-        <p class="main__item">создание внутренних корпаративных веб-платформ</p>
-        <p class="main__item">back-end</p>
-        <p class="main__item">создание ботов</p>
+        <div class="main__list">
+          <p class="main__item">создание полноценных веб-сайтов</p>
+          <p class="main__item">front-end</p>
+          <p class="main__item">верстка лендингов</p>
+          <p class="main__item">it-консультация</p>
+          <p class="main__item">создание внутренних корпаративных веб-платформ</p>
+          <p class="main__item">back-end</p>
+          <p class="main__item">создание ботов</p>
+        </div>
       </div>
-    </div>
-  </main>
-  <CasesGrid type="dev" />
+    </main>
+    <CasesGrid type="dev" />
+  </div>
 </template>
 
 <style scoped lang="scss">
