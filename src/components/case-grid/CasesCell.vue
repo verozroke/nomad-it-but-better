@@ -1,15 +1,16 @@
 <template>
   <div class="block">
     <div class="block-overlay">
-      <div class="overlay-title">Проект "Kourgau City"</div>
-      <a href="#" target="_blank"><v-btn variant="outlined" class="overlay-button">Ознакомиться</v-btn></a>
+      <div class="overlay-title">{{ title }}</div>
+      <!-- <a href="#" target="_blank"><v-btn variant="outlined" class="overlay-button">Ознакомиться</v-btn></a> -->
     </div>
-    <img :src="`/gallery/${src}`" alt="Gallery Photo" />
+    <img :src="src" alt="Gallery Photo" />
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps({
+  title: String,
   src: String
 })
 </script>

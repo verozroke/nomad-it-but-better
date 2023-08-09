@@ -1,5 +1,5 @@
 <template>
-  <CasesGrid />
+  <CasesGrid type="design" />
 </template>
 
 <script setup lang="ts">

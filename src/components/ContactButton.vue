@@ -7,15 +7,22 @@
 
     <v-card class="card">
       <div class="card-title" style="font-weight: 700; margin-bottom: 20px;">Связаться с нами</div>
-      <v-btn size="large" rounded="lg" prepend-icon="mdi-instagram" color="#E1306C" class="text-white" stacked>
-        Написать в Instagram
-      </v-btn>
-      <v-btn size="large" rounded="lg" color="#0088cc" class="text-white" stacked>
-        Написать в Telegram
-      </v-btn>
-      <v-btn size="large" rounded="lg" prepend-icon="mdi-whatsapp" color="#25D366" class="text-white" stacked>
-        Написать в Whatsapp
-      </v-btn>
+      <a target="_blank" href="https://www.instagram.com/nomads_1t/" style="width: 100%;">
+        <v-btn size="large" rounded="lg" prepend-icon="mdi-instagram" color="#E1306C" class="text-white" stacked>
+          Написать в Instagram
+        </v-btn>
+      </a>
+      <a target="_blank" href="https://api.whatsapp.com/send/?phone=77053505988" style="width: 100%;">
+        <v-btn size="large" rounded="lg" prepend-icon="mdi-whatsapp" color="#25D366" class="text-white" stacked>
+          Написать в Whatsapp
+        </v-btn>
+      </a>
+      <a target="_blank" href="https://t.me/ibrahimov088" style="width: 100%;">
+        <v-btn size="large" rounded="lg" color="#0088cc" class="text-white" stacked>
+          Написать в Telegram
+        </v-btn>
+      </a>
+
       <v-card-actions>
         <v-btn color="black" @click="dialog = false">Закрыть</v-btn>
       </v-card-actions>
