@@ -28,6 +28,7 @@ defineProps<{
   height: 317px;
   position: relative;
   overflow: hidden;
+  border: 1px solid #000;
 
   &:hover {
     .item__image {
@@ -41,11 +42,10 @@ defineProps<{
     padding: 20px 0;
     border-radius: 30px;
     display: flex;
-    color: #fff;
+    color: #000;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(139deg, rgba(229, 229, 229, 0.2) 0%, rgba(129, 129, 129, 0.20) 100%);
-    backdrop-filter: blur(7.5px);
+    background-color: #fff;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     height: 100%;

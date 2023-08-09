@@ -10,9 +10,10 @@
           составляющей.
         </div>
       </div>
-      <div class="about__circle">
-        <!-- FIXME: new image -->
-        <!-- <img src="/about-us.png" alt=""> -->
+      <div class="about__image">
+        <img
+          src="https://images.unsplash.com/photo-1589884629108-3193400c7cc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          alt="">
       </div>
     </div>
   </div>
@@ -24,7 +25,7 @@
 
 <style lang="scss" scoped>
 .about {
-  padding: 40px 0;
+  padding: 10rem 0 0 0;
   background-color: #fff;
 
 
@@ -32,6 +33,7 @@
     display: flex;
     width: 100%;
     align-items: center;
+    gap: 2em;
     justify-content: space-between;
   }
 
@@ -41,6 +43,7 @@
     flex-direction: column;
     z-index: 0;
     gap: 40px;
+    width: 50%;
     justify-content: center;
   }
 
@@ -68,17 +71,16 @@
     }
   }
 
-  &__circle {
-    width: 545px;
-    height: 545px;
+  &__image {
+    width: 50%;
 
     & img {
-      transform: scale(1.3);
-      width: 545px;
-      height: 545px;
+      border-radius: 20px;
+      width: 100%;
     }
-
   }
+
+
 
 }
 

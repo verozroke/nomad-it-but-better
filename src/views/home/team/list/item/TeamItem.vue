@@ -38,11 +38,10 @@ defineProps({
     flex-direction: column;
     justify-content: space-between;
     gap: 1em;
-    padding: 36px 65px;
+    padding: 30px 40px;
     width: 100%;
-    height: 324px;
+    height: 344px;
     border-radius: 30px;
-
     border: 2px solid #000;
   }
 
@@ -70,13 +69,13 @@ defineProps({
 
   &__image {
     width: 100%;
-    height: 200px;
+    height: 250px;
 
     & img {
       z-index: 999;
       border-radius: 26px;
       width: 100%;
-      height: 200px;
+      height: 250px;
       object-fit: cover;
     }
   }

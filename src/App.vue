@@ -3,6 +3,7 @@ import { nextTick, onMounted } from "vue";
 import Footer from "@/components/footer/Footer.vue";
 import HeaderVue from "@/components/header/HeaderVue.vue";
 import { useHeaderStore } from "./stores/HeaderStore";
+import ContactButton from "./components/ContactButton.vue";
 
 const headerStore = useHeaderStore();
 
@@ -24,6 +25,7 @@ onMounted(() => {
 
 <template>
   <header-vue />
+  <ContactButton />
   <div class="wrapper">
     <div class="main">
       <router-view v-slot="{ Component }">

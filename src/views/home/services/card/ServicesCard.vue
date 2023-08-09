@@ -43,8 +43,8 @@ const items = ref([
   justify-content: center;
   gap: 40px;
   border-radius: 30px;
-  background: linear-gradient(139deg, rgba(183, 183, 183, 0.20) 0%, rgba(129, 129, 129, 0.20) 100%);
-  backdrop-filter: blur(7.5px);
+  background-color: #fff;
+  filter: drop-shadow(0px 4px 4px #000000a0);
 }
 
 
