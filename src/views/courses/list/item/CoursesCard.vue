@@ -55,6 +55,7 @@ defineProps({
 
 const download = (src: string) => {
   const link = document.createElement('a')
+  console.log(src);
 
   link.setAttribute('href', src)
   link.download = 'Программа мастер-класса HTML & CSS 5-6 августа.pdf'

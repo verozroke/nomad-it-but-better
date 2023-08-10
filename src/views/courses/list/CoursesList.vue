@@ -27,7 +27,7 @@ const cards = ref([
     duration: '2-4 часа',
     difficulty: 'Лёгкий',
     bannerSrc: 'https://miro.medium.com/v2/resize:fit:1400/1*esOa9npMi79rC50Ds3nR1g.png',
-    planSrc: '/nomad-it-but-better/storage/program.pdf/',
+    planSrc: '/nomad-it-but-better/storage/program.pdf',
     formsLink: 'https://forms.gle/bNNASPDkQjUqMyE19',
     whatsappLink: 'https://api.whatsapp.com/send/?phone=77053505988'
   }
