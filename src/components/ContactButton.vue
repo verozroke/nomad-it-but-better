@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" width="auto">
+  <v-dialog class="dialog" v-model="dialog" width="auto">
     <template v-slot:activator="{ props }">
       <v-btn v-bind="props" size="x-large" class="medias-button" style="color: #fff;" color="#000"
         icon="mdi-phone"></v-btn>
@@ -65,5 +65,25 @@ const dialog = ref(false)
 
 .text-white {
   width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+
+    &-title {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  .dialog {
+    width: 90%;
+  }
+
+  .text-white {
+    font-size: 12px !important;
+  }
 }
 </style>
