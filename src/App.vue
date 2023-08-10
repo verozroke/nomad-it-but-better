@@ -24,17 +24,19 @@ onMounted(() => {
 </script>
 
 <template>
-  <header-vue />
-  <ContactButton />
-  <div class="wrapper">
-    <div class="main">
-      <router-view v-slot="{ Component }">
-        <transition name="routering" mode="out-in">
-          <component :is="Component"></component>
-        </transition>
-      </router-view>
+  <div>
+    <header-vue />
+    <ContactButton />
+    <div class="wrapper">
+      <div class="main">
+        <router-view v-slot="{ Component }">
+          <transition name="routering" mode="out-in">
+            <component :is="Component"></component>
+          </transition>
+        </router-view>
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </div>
 </template>
 
@@ -46,6 +48,7 @@ onMounted(() => {
 .wrapper {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   min-height: 100vh;
   background-color: #fff;
 }
