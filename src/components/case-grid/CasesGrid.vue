@@ -70,8 +70,33 @@ const designBlocks = ref([
 const devBlocks = ref([
   {
     id: 1,
-    title: 'Globamba',
-    src: '/nomad-it-but-better/grid/design/1.png'
+    title: 'Nomad Duken',
+    src: '/nomad-it-but-better/grid/dev/1.png'
+  },
+  {
+    id: 2,
+    title: 'Crew Central Asia 2023',
+    src: '/nomad-it-but-better/grid/dev/2.png'
+  },
+  {
+    id: 3,
+    title: 'Сайт-визитка визажистки',
+    src: '/nomad-it-but-better/grid/dev/3.png'
+  },
+  {
+    id: 4,
+    title: 'Симулятор шелвинга для компании Apple City Corp.',
+    src: '/nomad-it-but-better/grid/dev/4.png'
+  },
+  {
+    id: 5,
+    title: 'Гайдлайн Курсы Маркетинга для компании Apple City Corp.',
+    src: '/nomad-it-but-better/grid/dev/5.png'
+  },
+  {
+    id: 6,
+    title: 'Приложение iSecurity для МЧС РК',
+    src: '/nomad-it-but-better/grid/dev/6.png'
   },
 ])
 </script>
