@@ -4,27 +4,27 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/',
+      path: '/nomad-it-but-better/',
       name: 'Home',
       component: () => import('@/views/home/HomeView.vue')
     },
     {
-      path: '/about-us',
+      path: '/nomad-it-but-better/about-us',
       name: 'AboutUs',
       component: () => import('@/views/about-us/AboutUsView.vue')
     },
     {
-      path: '/courses',
+      path: '/nomad-it-but-better/courses',
       name: 'Courses',
       component: () => import('@/views/courses/CoursesView.vue')
     },
     {
-      path: '/dev-cases',
+      path: '/nomad-it-but-better/dev-cases',
       name: 'CasesDev',
       component: () => import('@/views/cases-dev/CasesDevView.vue')
     },
     {
-      path: '/design-cases',
+      path: '/nomad-it-but-better/design-cases',
       name: 'CasesDesign',
       component: () => import('@/views/cases-design/CasesDesignView.vue')
     },
