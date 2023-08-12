@@ -19,7 +19,7 @@ const items = ref([
   {
     id: 2,
     key: 'DESIGN',
-    imgSrc: '/nomad-it-but-better/card2.jpg',
+    imgSrc: '/card2.jpg',
     pageName: 'CasesDesign'
 
   },

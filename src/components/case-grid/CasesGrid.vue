@@ -18,52 +18,52 @@ const designBlocks = ref([
   {
     id: 1,
     title: 'Дизайн PAP',
-    src: '/nomad-it-but-better/grid/design/1.png'
+    src: '/grid/design/1.png'
   },
   {
     id: 2,
     title: 'Дизайн Мастер Голд',
-    src: '/nomad-it-but-better/grid/design/2.png'
+    src: '/grid/design/2.png'
   },
   {
     id: 3,
     title: 'Дизайн демонтажных услуг',
-    src: '/nomad-it-but-better/grid/design/3.png'
+    src: '/grid/design/3.png'
   },
   {
     id: 4,
     title: 'Дизайн StarTarget',
-    src: '/nomad-it-but-better/grid/design/4.png'
+    src: '/grid/design/4.png'
   },
   {
     id: 5,
     title: 'Дизайн Сберстрой',
-    src: '/nomad-it-but-better/grid/design/5.png'
+    src: '/grid/design/5.png'
   },
   {
     id: 6,
     title: 'Дизайн Профессионального Менеджера Татьяны',
-    src: '/nomad-it-but-better/grid/design/6.png'
+    src: '/grid/design/6.png'
   },
   {
     id: 7,
     title: 'Design Republic',
-    src: '/nomad-it-but-better/grid/design/7.png'
+    src: '/grid/design/7.png'
   },
   {
     id: 8,
     title: 'Intelsib',
-    src: '/nomad-it-but-better/grid/design/8.png'
+    src: '/grid/design/8.png'
   },
   {
     id: 9,
     title: 'TravelBreeze',
-    src: '/nomad-it-but-better/grid/design/9.png'
+    src: '/grid/design/9.png'
   },
   {
     id: 10,
     title: 'Globamba',
-    src: '/nomad-it-but-better/grid/design/10.png'
+    src: '/grid/design/10.png'
   },
 ])
 
@@ -71,32 +71,32 @@ const devBlocks = ref([
   {
     id: 1,
     title: 'Nomad Duken',
-    src: '/nomad-it-but-better/grid/dev/1.png'
+    src: '/grid/dev/1.png'
   },
   {
     id: 2,
     title: 'Crew Central Asia 2023',
-    src: '/nomad-it-but-better/grid/dev/2.png'
+    src: '/grid/dev/2.png'
   },
   {
     id: 3,
     title: 'Сайт-визитка визажистки',
-    src: '/nomad-it-but-better/grid/dev/3.png'
+    src: '/grid/dev/3.png'
   },
   {
     id: 4,
     title: 'Симулятор шелвинга для компании Apple City Corp.',
-    src: '/nomad-it-but-better/grid/dev/4.png'
+    src: '/grid/dev/4.png'
   },
   {
     id: 5,
     title: 'Гайдлайн Курсы Маркетинга для компании Apple City Corp.',
-    src: '/nomad-it-but-better/grid/dev/5.png'
+    src: '/grid/dev/5.png'
   },
   {
     id: 6,
     title: 'Приложение iSecurity для МЧС РК',
-    src: '/nomad-it-but-better/grid/dev/6.png'
+    src: '/grid/dev/6.png'
   },
 ])
 </script>

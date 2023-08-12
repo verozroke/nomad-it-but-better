@@ -24,7 +24,7 @@ const router = createRouter({
       component: () => import('@/views/cases-dev/CasesDevView.vue')
     },
     {
-      path: '/nomad-it-but-better/design-cases',
+      path: '/design-cases',
       name: 'CasesDesign',
       component: () => import('@/views/cases-design/CasesDesignView.vue')
     },
