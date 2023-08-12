@@ -4,22 +4,22 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/nomad-it-but-better/',
+      path: '/',
       name: 'Home',
       component: () => import('@/views/home/HomeView.vue')
     },
     {
-      path: '/nomad-it-but-better/about-us',
+      path: '/about-us',
       name: 'AboutUs',
       component: () => import('@/views/about-us/AboutUsView.vue')
     },
     {
-      path: '/nomad-it-but-better/courses',
+      path: '/courses',
       name: 'Courses',
       component: () => import('@/views/courses/CoursesView.vue')
     },
     {
-      path: '/nomad-it-but-better/dev-cases',
+      path: '/dev-cases',
       name: 'CasesDev',
       component: () => import('@/views/cases-dev/CasesDevView.vue')
     },
