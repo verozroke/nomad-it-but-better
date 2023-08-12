@@ -1,8 +1,8 @@
 <template>
   <div class="block">
     <div class="block-overlay">
-      <div class="overlay-title">Проект "Зарина Иди Нахуй со своим фараоном"</div>
-      <a href="#" target="_blank"><v-btn variant="outlined" class="overlay-button">Перейти в пизду</v-btn></a>
+      <div class="overlay-title">Проект "Kourgau City"</div>
+      <a href="#" target="_blank"><v-btn variant="outlined" class="overlay-button">Ознакомиться</v-btn></a>
     </div>
     <img :src="`/gallery/${src}`" alt="Gallery Photo" />
   </div>
@@ -39,6 +39,7 @@ defineProps({
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100%;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
@@ -56,8 +57,6 @@ defineProps({
   & img {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    object-position: center;
     object-fit: cover;
     transition: 0.4s;
   }
@@ -72,11 +71,17 @@ a {
   .block {
     width: 100%;
     max-width: 100%;
+    height: 100vw;
 
-    & img {
-      filter: brightness(100%);
-      transform: scale(1);
-      transition: 0.4s;
+  }
+}
+
+@media only screen and (max-width: 436px) {
+  .block {
+
+    &-overlay {
+      padding: 0 40px;
+      font-size: 16px;
     }
   }
 }

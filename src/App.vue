@@ -1,5 +1,25 @@
 <script setup lang="ts">
-import HeaderVue from './components/header/HeaderVue.vue';
+import { nextTick, onMounted } from "vue";
+import Footer from "@/components/footer/Footer.vue";
+import HeaderVue from "@/components/header/HeaderVue.vue";
+import { useHeaderStore } from "./stores/HeaderStore";
+
+const headerStore = useHeaderStore();
+
+const onResize = () => {
+  if (window.innerWidth < 980) {
+    headerStore.isMobile = true;
+  } else if (window.innerWidth >= 980) {
+    headerStore.isMobile = false;
+  }
+};
+
+onMounted(() => {
+  onResize();
+  nextTick(() => {
+    window.addEventListener("resize", onResize);
+  });
+});
 </script>
 
 <template>
@@ -12,7 +32,7 @@ import HeaderVue from './components/header/HeaderVue.vue';
         </transition>
       </router-view>
     </div>
-    <FooterSection class="footer" />
+    <Footer />
   </div>
 </template>
 

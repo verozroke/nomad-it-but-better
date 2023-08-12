@@ -1,9 +1,8 @@
 <template>
   <div class="item">
     <div class="item__card">
-      <div class="item__overlay"></div>
       <div class="item__image">
-
+        <img :src="src" alt="">
       </div>
       <div class="item__name">
         {{ name }}
@@ -32,33 +31,23 @@ defineProps({
   flex-direction: column;
   gap: 30px;
 
-  &__overlay {
-    border-radius: 332px;
-    background: #00053D;
-    filter: blur(200px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-  }
+
 
   &__card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1em;
     padding: 36px 65px;
     width: 100%;
     height: 324px;
     border-radius: 30px;
-    background: linear-gradient(139deg, rgba(183, 183, 183, 0.20) 0%, rgba(129, 129, 129, 0.20) 100%);
-    backdrop-filter: blur(7.5px);
-    border: 2px solid white;
+
+    border: 2px solid #000;
   }
 
   &__name {
-    color: #FFF;
+    color: #000;
     z-index: 1;
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -70,13 +59,26 @@ defineProps({
 
   &__title {
 
-    color: #A7A7A7;
+    color: #494949;
     text-align: center;
     font-size: 23px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+
+    & img {
+      z-index: 999;
+      border-radius: 26px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
   }
 }
 </style>

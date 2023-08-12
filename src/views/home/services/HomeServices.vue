@@ -19,15 +19,18 @@ import ServicesSlogans from './slogans/ServicesSlogans.vue'
 <style lang="scss" scoped>
 .services {
   padding: 40px 0;
-  background-color: #000;
+  background-color: #fff;
 
   &__container {
     display: flex;
+    gap: 45px;
     flex-direction: column;
   }
 
+
+
   &__title {
-    color: #FFF;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 50px;
     font-style: normal;
@@ -39,9 +42,21 @@ import ServicesSlogans from './slogans/ServicesSlogans.vue'
 
   &__box {
     width: 100%;
+    justify-content: center;
     display: flex;
-    gap: 50px;
+    gap: 100px;
     align-items: center;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1220px) {
+  .services {
+    &__title {
+      text-align: center;
+    }
   }
 }
 </style>
