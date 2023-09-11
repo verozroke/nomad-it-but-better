@@ -20,15 +20,15 @@ const members = ref([
   {
     id: 2,
     name: 'Владислав',
-    src: '/team-photos/vlad.jpg',
+    src: '/team-photos/vlad.webp',
     occupation: 'Full-stack Разработчик',
   },
-  {
-    id: 3,
-    name: 'Сабыржан',
-    src: '/team-photos/sabyr.jpg',
-    occupation: 'Full-stack Разработчик',
-  },
+  // {
+  //   id: 3,
+  //   name: 'Сабыржан',
+  //   src: '/team-photos/sabyr.jpg',
+  //   occupation: 'Full-stack Разработчик',
+  // },
   {
     id: 4,
     name: 'Маулен',
@@ -47,16 +47,16 @@ const members = ref([
     src: '/team-photos/idris.jpg',
     occupation: 'Backend Разработчик',
   },
-  {
-    id: 7,
-    name: 'Александр',
-    src: '/team-photos/sanya.jpg',
-    occupation: 'Frontend Разработчик',
-  },
+  // {
+  //   id: 7,
+  //   name: 'Александр',
+  //   src: '/team-photos/sanya.jpg',
+  //   occupation: 'Frontend Разработчик',
+  // },
   {
     id: 8,
     name: 'Дарина',
-    src: '/team-photos/darina.jfif',
+    src: '/team-photos/darina.jpg',
     occupation: 'Backend Разработчица',
   },
   {
@@ -74,7 +74,7 @@ const members = ref([
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 120px;
+  gap: 80px;
   width: 100%;
   align-items: center;
 }

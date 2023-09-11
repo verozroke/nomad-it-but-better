@@ -1,7 +1,7 @@
 <template>
   <div class="team">
     <div class="team__container">
-      <div class="team__title">Команда</div>
+      <div class="team__title hidden">Команда</div>
       <TeamList />
     </div>
   </div>
@@ -9,6 +9,30 @@
 
 <script setup lang="ts">
 import TeamList from './list/TeamList.vue'
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
+
+
+
+setTimeout(() => {
+  let titleElements = document.querySelectorAll('.team__title.hidden')
+
+  let hiddenElements = [
+    ...titleElements,
+  ]
+  hiddenElements.forEach((hiddenElement) => {
+    observer.observe(hiddenElement)
+  })
+}, 0)
 
 </script>
 
@@ -26,12 +50,25 @@ import TeamList from './list/TeamList.vue'
     font-weight: 700;
     line-height: normal;
     z-index: 1;
+
+    &.hidden {
+      opacity: 0;
+      transition: all 1s;
+      filter: blur(20px);
+      transform: translateY(-100px);
+    }
+
+    &.show {
+      filter: blur(0);
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 60px;
   }
 }
 </style>

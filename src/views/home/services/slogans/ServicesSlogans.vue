@@ -1,5 +1,5 @@
 <template>
-  <div class="slogans">
+  <div class="slogans hidden">
     <ServicesSlogan v-for="slogan in slogans" :key="slogan.id" :slogan-name="slogan.name" />
     <div class="arrow">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 30 36" fill="none">
@@ -30,6 +30,30 @@ const arrowPosition = computed(() => {
   }
 })
 
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
+
+
+
+setTimeout(() => {
+  let sloganElements = document.querySelectorAll('.slogans.hidden')
+
+  let hiddenElements = [
+    ...sloganElements,
+  ]
+  hiddenElements.forEach((hiddenElement) => {
+    observer.observe(hiddenElement)
+  })
+}, 0)
+
 const slogans = ref([
   {
     id: 1,
@@ -53,6 +77,19 @@ const slogans = ref([
   justify-content: space-between;
   position: relative;
   height: 389px;
+
+  &.hidden {
+    opacity: 0;
+    transition: all 1.3s;
+    filter: blur(20px);
+    transform: translateX(300px);
+  }
+
+  &.show {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .arrow {

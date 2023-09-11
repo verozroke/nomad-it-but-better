@@ -1,50 +1,80 @@
 <template>
   <div class="stages">
-    <div class="stages__title">
+    <div class="stages__title hidden">
       <h2>Процесс работы</h2>
       <h3>5 шагов</h3>
     </div>
     <div class="stages__main">
       <div class="stages__bignum left">1</div>
       <div class="stages__line"></div>
-      <div class="stages__textblock">
+      <div class="stages__textblock right hidden">
         <div class="stages__rainbowtitle">Связь с нами</div>
         <div class="stages__text">После связи с нами и ознакомления с вашим продуктом или услугой мы организуем созвон
         </div>
       </div>
-      <div class="stages__textblock left">
+      <div class="stages__textblock left hidden">
         <div class="stages__rainbowtitle">Обсуждение проекта</div>
         <div class="stages__text">Во время нашего созвона мы задаем вам вопросы чтобы получить всю необходимую и важную
           информацию о вашем бизнесе и лучше понять его цели и задачи.</div>
       </div>
       <div class="stages__bignum">2</div>
       <div class="stages__bignum left">3</div>
-      <div class="stages__textblock">
+      <div class="stages__textblock right hidden">
         <div class="stages__rainbowtitle">Подключение программистов / дизайнеров / маркетологов</div>
         <div class="stages__text">После получения всей необходимой информации, мы распределяем работу между нашей командой
           для эффективного и планомерного выполнения задач.</div>
       </div>
-      <div class="stages__textblock left">
+      <div class="stages__textblock left hidden">
         <div class="stages__rainbowtitle">Процесс разработки</div>
         <div class="stages__text">Перед началом работ мы устанавливаем сроки, в которых подробно описываем все этапы
           процесса разработки.</div>
       </div>
       <div class="stages__bignum">4</div>
       <div class="stages__bignum left">5</div>
-      <div class="stages__textblock">
+      <div class="stages__textblock right hidden">
         <div class="stages__rainbowtitle">Готовый проект</div>
         <div class="stages__text">После слаженной и комплексной работы наших сотрудников вы получаете готовый проект с
           продуманным дизайном, грамотным маркетингом и безупречной технической работы наших программистов</div>
       </div>
     </div>
   </div>
-</template>
+</template>]
+
+
+<script setup lang="ts">
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
+
+
+
+setTimeout(() => {
+  let stagesTitleElements = document.querySelectorAll('.stages__title.hidden')
+  let stagesRightElements = document.querySelectorAll('.stages__textblock.right.hidden')
+  let stagesLeftElements = document.querySelectorAll('.stages__textblock.left.hidden')
+
+  let hiddenElements = [
+    ...stagesTitleElements,
+    ...stagesRightElements,
+    ...stagesLeftElements,
+  ]
+  hiddenElements.forEach((hiddenElement) => {
+    observer.observe(hiddenElement)
+  })
+}, 0)
+</script>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 .stages {
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-left: 14rem;
   padding-right: 14rem;
 
@@ -52,6 +82,19 @@
   color: #000;
 
   .stages__title {
+    &.hidden {
+      opacity: 0;
+      transition: all .7s;
+      filter: blur(20px);
+      transform: translateX(-100px);
+    }
+
+    &.show {
+      filter: blur(0);
+      opacity: 1;
+      transform: translateX(0);
+    }
+
     h2 {
       font-family: Inter;
       font-size: 3.125rem;
@@ -100,6 +143,34 @@
     .stages__textblock.left {
       text-align: right;
       float: right;
+
+      &.hidden {
+        opacity: 0;
+        transition: all .7s;
+        filter: blur(20px);
+        transform: translateX(100px);
+      }
+
+      &.show {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .stages__textblock.right {
+      &.hidden {
+        opacity: 0;
+        transition: all .7s;
+        filter: blur(20px);
+        transform: translateX(-100px);
+      }
+
+      &.show {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     .stages__rainbowtitle {

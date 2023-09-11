@@ -1,7 +1,6 @@
 <template>
   <div class="hero">
-
-    <div class="hero__container">
+    <div class="hero__container hidden">
       <div class="hero__title">Современное решение современных бизнесов</div>
       <div class="hero__subtitle">Сайты, приложение, дизайн, маркетинг</div>
       <div class="hero__button-text">Услуги</div>
@@ -17,6 +16,28 @@
 </template>
 
 <script setup lang="ts">
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
+
+
+
+setTimeout(() => {
+  let containerElements = document.querySelectorAll('.hero__container.hidden')
+
+  let hiddenElements = [
+    ...containerElements,
+  ]
+  hiddenElements.forEach((hiddenElement) => {
+    observer.observe(hiddenElement)
+  })
+}, 0)
 
 </script>
 
@@ -33,6 +54,19 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+
+    &.hidden {
+      opacity: 0;
+      transition: all 1.5s;
+      filter: blur(20px);
+      transform: translateY(300px);
+    }
+
+    &.show {
+      filter: blur(0);
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
 
   &__title {

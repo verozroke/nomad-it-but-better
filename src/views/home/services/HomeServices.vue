@@ -1,7 +1,7 @@
 <template>
   <div class="services">
     <div class="services__container">
-      <div class="services__title">Выбери услугу:</div>
+      <div class="services__title hidden">Выбери услугу:</div>
       <div class="services__box">
         <ServicesCard />
         <ServicesSlogans />
@@ -13,6 +13,31 @@
 <script setup lang="ts">
 import ServicesCard from './card/ServicesCard.vue'
 import ServicesSlogans from './slogans/ServicesSlogans.vue'
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
+
+
+
+setTimeout(() => {
+  let titleElements = document.querySelectorAll('.services__title.hidden')
+
+  let hiddenElements = [
+    ...titleElements,
+  ]
+  hiddenElements.forEach((hiddenElement) => {
+    observer.observe(hiddenElement)
+  })
+}, 0)
+
 
 </script>
 
@@ -38,6 +63,19 @@ import ServicesSlogans from './slogans/ServicesSlogans.vue'
     line-height: normal;
     z-index: 1;
     width: 100%;
+
+    &.hidden {
+      opacity: 0;
+      transition: all 1.3s;
+      filter: blur(20px);
+      transform: translateX(-300px);
+    }
+
+    &.show {
+      filter: blur(0);
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   &__box {

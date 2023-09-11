@@ -61,4 +61,25 @@ onMounted(() => {
   font-weight: 400;
   font-style: normal;
 }
+
+
+.routering {
+  &-enter-from {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+
+  &-enter-active {
+    transition: all 0.3s ease-out;
+  }
+
+  &-leave-to {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+
+  &-leave-active {
+    transition: all 0.3s ease-in;
+  }
+}
 </style>

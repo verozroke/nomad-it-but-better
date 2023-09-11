@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card hidden">
     <ServicesItem :page-name="item.pageName" v-for="item in items" :key="item.id" :card-number="item.id"
       :service-name="item.key" :imgSrc="item.imgSrc" />
   </div>
@@ -9,11 +9,35 @@
 import { ref } from 'vue';
 import ServicesItem from './item/ServicesItem.vue'
 
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
+
+
+
+setTimeout(() => {
+  let cardElements = document.querySelectorAll('.card.hidden')
+
+  let hiddenElements = [
+    ...cardElements,
+  ]
+  hiddenElements.forEach((hiddenElement) => {
+    observer.observe(hiddenElement)
+  })
+}, 0)
+
 const items = ref([
   {
     id: 1,
     key: 'DEV',
-    imgSrc: 'https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+    imgSrc: 'https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=2000',
     pageName: 'CasesDev'
   },
   {
@@ -26,7 +50,7 @@ const items = ref([
   {
     id: 3,
     key: 'SMM',
-    imgSrc: 'https://hsbi.hse.ru/upload/career/professions/2018/smm-1.png',
+    imgSrc: 'https://assets-global.website-files.com/6294b12fe96345a83876d4a5/62dabd4a70b55418330fa1b3_smm-manager-h.png',
     pageName: 'CasesDesign'
 
   },
@@ -45,6 +69,19 @@ const items = ref([
   border-radius: 30px;
   background-color: #fff;
   filter: drop-shadow(0px 4px 4px #000000a0);
+
+  &.hidden {
+    opacity: 0;
+    transition: all 1s;
+    // filter: blur(20px);
+    transform: translateX(-300px);
+  }
+
+  &.show {
+    // filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 

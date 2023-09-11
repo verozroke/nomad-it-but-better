@@ -29,7 +29,7 @@ defineProps({
   width: 304px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 
 
 
@@ -38,12 +38,11 @@ defineProps({
     flex-direction: column;
     justify-content: space-between;
     gap: 1em;
-    padding: 36px 65px;
+    padding: 36px 65px 0 65px;
     width: 100%;
-    height: 324px;
+    height: 280px;
     border-radius: 30px;
 
-    border: 2px solid #000;
   }
 
   &__name {
@@ -61,7 +60,7 @@ defineProps({
 
     color: #494949;
     text-align: center;
-    font-size: 23px;
+    font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;

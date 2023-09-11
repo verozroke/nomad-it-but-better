@@ -31,7 +31,7 @@ import TeamList from './list/TeamList.vue'
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 30px;
   }
 }
 </style>

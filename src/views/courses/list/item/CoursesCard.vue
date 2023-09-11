@@ -8,7 +8,7 @@
       </div>
       <div class="card__info">
         <!-- <div class="card__old-price"><span style="color: #000;">{{ oldPrice }} тенге</span></div> -->
-        <!-- <div class="card__price">{{ price }} тенге</div> -->
+        <div class="card__price">{{ price }}</div>
         <div class="card__tunnel">
           <div class="card__duration">
 
@@ -80,9 +80,9 @@ const download = (src: string) => {
     width: 100%;
     text-align: left;
     font-family: 'Exo 2', sans-serif;
-    font-size: 100px;
+    font-size: 72px;
     color: #000;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   &__box {
@@ -128,7 +128,7 @@ const download = (src: string) => {
     text-align: left;
     font-family: 'Exo 2', sans-serif;
 
-    font-size: 70px;
+    font-size: 24px;
     letter-spacing: 1px;
     color: #000;
     font-weight: 700;
@@ -191,7 +191,7 @@ const download = (src: string) => {
     display: flex;
     width: 100%;
     font-family: 'Exo 2', sans-serif;
-    justify-content: space-between;
+    gap: 2em;
   }
 }
 
