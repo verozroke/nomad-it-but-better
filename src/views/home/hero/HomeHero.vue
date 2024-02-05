@@ -4,11 +4,21 @@
       <div class="hero__title">Современное решение современных бизнесов</div>
       <div class="hero__subtitle">Сайты, приложение, дизайн, маркетинг</div>
       <div class="hero__button-text">Услуги</div>
-      <div class="hero__button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="23" viewBox="0 0 16 23" fill="none">
+      <div
+        class="hero__button"
+        @click="animateToRegion('')"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="23"
+          viewBox="0 0 16 23"
+          fill="none"
+        >
           <path
             d="M7.29289 21.7295C7.68342 22.1201 8.31658 22.1201 8.70711 21.7295L15.0711 15.3656C15.4616 14.9751 15.4616 14.3419 15.0711 13.9514C14.6805 13.5608 14.0474 13.5608 13.6569 13.9514L8 19.6082L2.34315 13.9514C1.95262 13.5608 1.31946 13.5608 0.928932 13.9514C0.538408 14.3419 0.538408 14.9751 0.928932 15.3656L7.29289 21.7295ZM7 0L7 21.0224H9L9 0L7 0Z"
-            fill="black" />
+            fill="black"
+          />
         </svg>
       </div>
     </div>
@@ -25,6 +35,13 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 })
+
+
+
+const animateToRegion = (selector: string) => {
+  // TODO: ANIMATION 
+  console.log(selector)
+}
 
 
 

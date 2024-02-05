@@ -1,30 +1,79 @@
 <template>
-  <v-dialog class="dialog" v-model="dialog" width="auto">
+  <v-dialog
+    class="dialog"
+    v-model="dialog"
+    width="auto"
+  >
     <template v-slot:activator="{ props }">
-      <v-btn v-bind="props" size="x-large" class="medias-button" style="color: #fff;" color="#000"
-        icon="mdi-phone"></v-btn>
+      <v-btn
+        v-bind="props"
+        size="large"
+        rounded="xl"
+        class="medias-button"
+        style="color: #fff;"
+        color="#25D366"
+        prepend-icon="mdi-whatsapp"
+      >написать</v-btn>
     </template>
 
     <v-card class="card">
-      <div class="card-title" style="font-weight: 700; margin-bottom: 20px;">Связаться с нами</div>
-      <a target="_blank" href="https://www.instagram.com/nomads_1t/" style="width: 100%;">
-        <v-btn size="large" rounded="lg" prepend-icon="mdi-instagram" color="#E1306C" class="text-white" stacked>
+      <div
+        class="card-title"
+        style="font-weight: 700; margin-bottom: 20px;"
+      >Связаться с нами</div>
+      <a
+        target="_blank"
+        href="https://www.instagram.com/cnomad_/"
+        style="width: 100%;"
+      >
+        <v-btn
+          size="large"
+          rounded="lg"
+          prepend-icon="mdi-instagram"
+          color="#E1306C"
+          class="text-white"
+          stacked
+        >
           Написать в Instagram
         </v-btn>
       </a>
-      <a target="_blank" href="https://api.whatsapp.com/send/?phone=77053505988" style="width: 100%;">
-        <v-btn size="large" rounded="lg" prepend-icon="mdi-whatsapp" color="#25D366" class="text-white" stacked>
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send/?phone=77053505988"
+        style="width: 100%;"
+      >
+        <v-btn
+          size="large"
+          rounded="lg"
+          prepend-icon="mdi-whatsapp"
+          color="#25D366"
+          class="text-white"
+          stacked
+        >
           Написать в Whatsapp
         </v-btn>
       </a>
-      <a target="_blank" href="https://t.me/ibrahimov088" style="width: 100%;">
-        <v-btn size="large" rounded="lg" color="#0088cc" class="text-white" stacked>
+      <a
+        target="_blank"
+        href="https://t.me/ibrahimov088"
+        style="width: 100%;"
+      >
+        <v-btn
+          size="large"
+          rounded="lg"
+          color="#0088cc"
+          class="text-white"
+          stacked
+        >
           Написать в Telegram
         </v-btn>
       </a>
 
       <v-card-actions>
-        <v-btn color="black" @click="dialog = false">Закрыть</v-btn>
+        <v-btn
+          color="black"
+          @click="dialog = false"
+        >Закрыть</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -42,6 +91,7 @@ const dialog = ref(false)
 <style lang="scss" scoped>
 .medias-button {
   position: fixed;
+  font-size: 16px;
   bottom: 15px;
   right: 15px;
   z-index: 10000000;

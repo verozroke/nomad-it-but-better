@@ -2,8 +2,10 @@
 import HomeHero from './hero/HomeHero.vue'
 import HomeTeam from './team/HomeTeam.vue'
 import HomeServices from './services/HomeServices.vue'
+import HomeReviews from './reviews/HomeReviews.vue'
 import HomeAbout from './about-us/HomeAbout.vue'
 import HomeStages from './stages/HomeStages.vue'
+import HomeCases from './cases/HomeCases.vue'
 
 import { onMounted } from 'vue'
 
@@ -45,14 +47,31 @@ setTimeout(() => {
 
 <template>
   <div id="Home">
-    <img id="circle-1" class="hidden" src="/shapes/circle.png" alt="">
+    <img
+      id="circle-1"
+      class="hidden"
+      src="/shapes/circle.png"
+      alt=""
+    >
     <!-- <img id="ring-1" src="/shapes/ring.png" alt=""> -->
-    <img id="ratatui-1" class="hidden" src="/shapes/ratatui.png" alt="">
-    <img id="circle-2" class="hidden" src="/shapes/circle.png" alt="">
+    <img
+      id="ratatui-1"
+      class="hidden"
+      src="/shapes/ratatui.png"
+      alt=""
+    >
+    <img
+      id="circle-2"
+      class="hidden"
+      src="/shapes/circle.png"
+      alt=""
+    >
     <HomeHero />
-    <HomeServices />
-    <HomeTeam />
     <HomeAbout />
+    <HomeReviews />
+    <HomeCases />
+    <!-- <HomeServices /> -->
+    <!-- <HomeTeam /> -->
     <HomeStages />
   </div>
 </template>

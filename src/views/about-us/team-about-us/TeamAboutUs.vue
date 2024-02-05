@@ -1,17 +1,23 @@
 <template>
-  <v-parallax id="team-about-us"
+  <v-parallax
+    id="team-about-us"
     src="https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-    class="about-us">
+    class="about-us"
+  >
     <div class="about-us__overlay">
       <div class="about-us__container">
         <div class="about-us__title">О нас:</div>
         <div class="about-us__text">
-          Добро пожаловать в команду инновационных разработчиков и дизайнеров! <br>
-          Мы занимаемся разработкой разнообразных IT-продуктов, включая веб-сайты, ботов, макеты и обучающие курсы. <br>
+          В CNomad мы создаем не просто сайты, мы оживляем ваш бизнес в цифровом мире. Наша команда экспертов
+          разрабатывает уникальные веб-сайты, мобильные приложения и онлайн-магазины, применяя новейшие технологии. <br>
           <br>
-          Впервую очередь мы заинтересованы в реализации ваших замечательных идей!
+
+          Мы создаем чат-боты для WhatsApp и Telegram, интеграции систем, облегчая вам общение с клиентами. Наши дизайнеры
+          мастерски разрабатывают логотипы и дизайны сайтов, делая каждый проект неповторимым. А с настройкой
+          таргетированной рекламы мы помогаем вашему бизнесу быть на шаг впереди конкурентов. <br> <br>
+
+          CNomad - ваш ключ к успешному присутствию в Интернете!
         </div>
-        <v-btn @click="scrollDown('team-list')" variant="outlined">Далее</v-btn>
       </div>
     </div>
   </v-parallax>
@@ -46,7 +52,6 @@ function scrollDown(blockID: string) {
 
 
   &__container {
-    font-family: 'Exo 2', sans-serif;
 
     color: #fff;
     height: 100%;

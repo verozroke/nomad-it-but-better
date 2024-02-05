@@ -1,8 +1,19 @@
 <template>
   <div class="blocks">
-    <CasesCell v-if="type === 'design'" v-for="block in designBlocks" :title="block.title" :key="block.id"
-      :src="block.src" />
-    <CasesCell v-if="type === 'dev'" v-for="block in devBlocks" :key="block.id" :src="block.src" />
+    <CasesCell
+      v-if="type === 'design'"
+      v-for="block in designBlocks"
+      :title="block.title"
+      :key="block.id"
+      :src="block.src"
+    />
+    <CasesCell
+      v-if="type === 'dev'"
+      v-for="block in devBlocks"
+      :key="block.id"
+      :title="block.title"
+      :src="block.src"
+    />
   </div>
 </template>
 
@@ -15,6 +26,11 @@ defineProps<{
 }>()
 
 const designBlocks = ref([
+  {
+    id: 11,
+    title: 'Приложение iSecurity для МЧС РК',
+    src: '/grid/dev/6.png'
+  },
   {
     id: 1,
     title: 'Дизайн PAP',
@@ -65,14 +81,15 @@ const designBlocks = ref([
     title: 'Globamba',
     src: '/grid/design/10.png'
   },
-])
-
-const devBlocks = ref([
   {
-    id: 1,
+    id: 12,
     title: 'Nomad Duken',
     src: '/grid/dev/1.png'
   },
+])
+
+const devBlocks = ref([
+
   {
     id: 2,
     title: 'Crew Central Asia 2023',
@@ -93,11 +110,7 @@ const devBlocks = ref([
     title: 'Гайдлайн Курсы Маркетинга для компании Apple City Corp.',
     src: '/grid/dev/5.png'
   },
-  {
-    id: 6,
-    title: 'Приложение iSecurity для МЧС РК',
-    src: '/grid/dev/6.png'
-  },
+
 ])
 </script>
 

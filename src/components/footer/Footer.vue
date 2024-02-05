@@ -2,11 +2,10 @@
   <div class="footer">
     <div class="footer__body">
       <div class="footer__column">
-        <div class="footer__name">NOMAD it</div>
-        <div class="footer__date">© 2023 Nomad it.</div>
+        <div class="footer__name">CNomad</div>
+        <div class="footer__date">© 2023 CNomad.</div>
         <div class="footer__copy">
-          Все права защищены. Копирование контента/дизайна преследуется по
-          закону.
+          Все права защищены.
         </div>
         <div class="footer__social">
           <div class="footer__link">
@@ -14,12 +13,21 @@
               href="https://api.whatsapp.com/send/?phone=77053505988"
               target="_blank"
             >
-              <img src="/icons/whats-app.svg" alt="whats-app" />
+              <img
+                src="/icons/whats-app.svg"
+                alt="whats-app"
+              />
             </a>
           </div>
           <div class="footer__link">
-            <a href="https://www.instagram.com/nomads_1t/" target="_blank">
-              <img src="/icons/instagram.svg" alt="instagram" />
+            <a
+              href="https://www.instagram.com/cnomad_/"
+              target="_blank"
+            >
+              <img
+                src="/icons/instagram.svg"
+                alt="instagram"
+              />
             </a>
           </div>
         </div>
@@ -27,7 +35,11 @@
       <div class="footer__column">
         <div class="footer__title">Карта сайта</div>
         <ul class="footer__list">
-          <li v-for="item in navItems" :key="item.title" class="footer__item">
+          <li
+            v-for="item in navItems"
+            :key="item.title"
+            class="footer__item"
+          >
             <router-link :to="item.to">{{ item.title }}</router-link>
           </li>
         </ul>
@@ -47,7 +59,10 @@
         </div>
         <div class="footer__row">
           <div class="footer__title">Телефон:</div>
-          <a href="tel:87771234567" class="footer__phone">+7 777 123 45 67</a>
+          <a
+            href="tel:87771234567"
+            class="footer__phone"
+          >+7 705 350 59 88</a>
         </div>
       </div>
     </div>
@@ -62,16 +77,14 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { title: "Главная", to: "/" },
-  { title: "О нас", to: "about-us" },
-  { title: "Услуги", to: "" },
-  { title: "Отзывы", to: "" },
-  { title: "Команда", to: "" },
-  { title: "Процесс работы", to: "" },
+  { title: "О нас", to: "/about-us" },
+  { title: "Отзывы", to: "/" },
+  { title: "Процесс работы", to: "/" },
 ];
 
 const additionallyItems: NavItem[] = [
-  { title: "Публичная офферта", to: "" },
-  { title: "Политика конфиденциальности", to: "" },
+  { title: "Публичная офферта", to: "/" },
+  { title: "Политика конфиденциальности", to: "/" },
 ];
 </script>
 

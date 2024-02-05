@@ -3,9 +3,18 @@
     <div class="block-overlay">
 
       <div class="overlay-title">{{ title }}</div>
-      <!-- <a href="#" target="_blank"><v-btn variant="outlined" class="overlay-button">Ознакомиться</v-btn></a> -->
+      <a
+        href="#"
+        target="_blank"
+      ><v-btn
+          variant="outlined"
+          class="overlay-button"
+        >Перейти</v-btn></a>
     </div>
-    <img :src="src" alt="Gallery Photo" />
+    <img
+      :src="src"
+      alt="Gallery Photo"
+    />
   </div>
 </template>
 
@@ -18,18 +27,17 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
+.overlay-title {
+  width: 50%;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .block {
   width: 50%;
   height: 50vw;
   max-width: 50%;
   position: relative;
-
-  &:hover {
-    .block-overlay {
-      opacity: 1;
-      transition: 0.4s;
-    }
-  }
 
   &-overlay {
     flex-direction: column;
@@ -44,10 +52,9 @@ defineProps({
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
     font-weight: 400;
-    opacity: 0;
     position: absolute;
     transition: 0.4s;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     top: 0;
     left: 0;
     right: 0;

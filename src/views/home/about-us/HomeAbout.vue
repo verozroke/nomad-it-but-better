@@ -9,17 +9,24 @@
           Начиная от <b>лого</b> и <b>брендирования</b>, заканчивая его <b>маркетингом</b> и <b>технической</b>
           составляющей.
         </div>
+        <v-btn
+          @click="router.push('/about-us')"
+          variant="outlined"
+        >Читать далее</v-btn>
       </div>
       <div class="about__image hidden">
         <img
           src="https://images.unsplash.com/photo-1589884629108-3193400c7cc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-          alt="">
+          alt=""
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -29,6 +36,8 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 })
+
+const router = useRouter()
 
 
 

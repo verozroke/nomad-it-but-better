@@ -2,7 +2,7 @@
   <div class="team">
     <TeamHero />
     <TeamAboutUs />
-    <AboutTeam />
+    <!-- <AboutTeam /> -->
   </div>
 </template>
 

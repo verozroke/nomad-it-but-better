@@ -6,24 +6,35 @@
         class="header__title"
         :style="{ flex: headerStore.isMobile ? '1 1 auto' : '' }"
       >
-        NOMAD it</RouterLink
+        CNomad</RouterLink>
+      <ul
+        class="header__row"
+        v-if="!headerStore.isMobile"
       >
-      <ul class="header__row" v-if="!headerStore.isMobile">
         <li>
-          <RouterLink :to="{ name: 'AboutUs' }" href="">О нас</RouterLink>
+          <RouterLink
+            :to="{ name: 'AboutUs' }"
+            href=""
+          >О нас</RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'Courses' }" href=""
-            >Мастер-классы
+          <RouterLink
+            :to="{ name: 'Courses' }"
+            href=""
+          >Мастер-классы
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'CasesDev' }" href="">Кейсы DEV</RouterLink>
+          <RouterLink
+            :to="{ name: 'CasesDev' }"
+            href=""
+          >Кейсы DEV</RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'CasesDesign' }" href=""
-            >Кейсы Design</RouterLink
-          >
+          <RouterLink
+            :to="{ name: 'CasesDesign' }"
+            href=""
+          >Кейсы Design</RouterLink>
         </li>
       </ul>
       <HeaderBurger v-if="headerStore.isMobile" />
@@ -75,20 +86,14 @@ const headerStore = useHeaderStore();
       border-radius: 5px;
       line-height: normal;
       word-wrap: normal;
-      color: transparent;
-      background: linear-gradient(90deg, #000 50%, #fff 0),
-        linear-gradient(-90deg, #000 50%, #fff 0),
-        linear-gradient(90deg, #fff 50%, #000 0%, #000 100% 0),
-        linear-gradient(-90deg, #fff 50%, #000 0%, #000 100% 0);
-      background-repeat: no-repeat;
-      background-size: 200% 51%;
-      background-position: top left, bottom right;
-      -webkit-background-clip: text, text, padding-box, padding-box;
-      background-clip: text, text, padding-box, padding-box;
-      transition: 0.4s;
+      color: #000;
+      transition: .2s;
+
 
       &:hover {
-        background-position: top right, bottom left;
+        background-color: #000;
+        color: #fff;
+        transition: .2s;
       }
     }
   }

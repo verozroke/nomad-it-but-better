@@ -1,11 +1,14 @@
 <template>
   <v-parallax
     src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1147&q=80"
-    class="hero">
+    class="hero"
+  >
     <div class="hero__overlay">
       <div class="hero__container">
-        <div class="hero__title">Добро пожаловать в Nomad IT <v-btn @click="scrollDown('team-about-us')"
-            variant="outlined">Читать далее</v-btn></div>
+        <div class="hero__title">Добро пожаловать в CNomad <v-btn
+            @click="scrollDown('team-about-us')"
+            variant="outlined"
+          >Читать далее</v-btn></div>
       </div>
     </div>
   </v-parallax>
@@ -39,8 +42,6 @@ function scrollDown(blockID: string) {
   }
 
   &__container {
-    font-family: 'Exo 2', sans-serif;
-
     color: #fff;
     height: 100%;
     width: 100%;
