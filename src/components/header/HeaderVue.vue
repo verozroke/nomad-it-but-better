@@ -24,7 +24,7 @@
           >Мастер-классы
           </RouterLink>
         </li>
-        <li>
+        <!-- <li>
           <RouterLink
             :to="{ name: 'CasesDev' }"
             href=""
@@ -35,7 +35,7 @@
             :to="{ name: 'CasesDesign' }"
             href=""
           >Кейсы Design</RouterLink>
-        </li>
+        </li> -->
       </ul>
       <HeaderBurger v-if="headerStore.isMobile" />
     </div>

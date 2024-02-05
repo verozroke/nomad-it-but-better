@@ -18,16 +18,16 @@ const router = createRouter({
       name: 'Courses',
       component: () => import('@/views/courses/CoursesView.vue')
     },
-    {
-      path: '/dev-cases',
-      name: 'CasesDev',
-      component: () => import('@/views/cases-dev/CasesDevView.vue')
-    },
-    {
-      path: '/design-cases',
-      name: 'CasesDesign',
-      component: () => import('@/views/cases-design/CasesDesignView.vue')
-    },
+    // {
+    //   path: '/dev-cases',
+    //   name: 'CasesDev',
+    //   component: () => import('@/views/cases-dev/CasesDevView.vue')
+    // },
+    // {
+    //   path: '/design-cases',
+    //   name: 'CasesDesign',
+    //   component: () => import('@/views/cases-design/CasesDesignView.vue')
+    // },
 
   ]
 })

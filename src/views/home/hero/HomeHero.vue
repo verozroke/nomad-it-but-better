@@ -6,7 +6,7 @@
       <div class="hero__button-text">Услуги</div>
       <div
         class="hero__button"
-        @click="animateToRegion('')"
+        @click="scrollDown('about')"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,11 +38,15 @@ const observer = new IntersectionObserver((entries) => {
 
 
 
-const animateToRegion = (selector: string) => {
-  // TODO: ANIMATION 
-  console.log(selector)
-}
 
+
+function scrollDown(blockID: string) {
+  const $block = document.getElementById(blockID)
+  $block?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+}
 
 
 setTimeout(() => {
@@ -145,6 +149,23 @@ setTimeout(() => {
 
     &__button-text {
       font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 824px) {
+  .hero {
+    &__title {
+      font-size: 24px;
+      width: 80%;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__button-text {
+      font-size: 12px;
     }
   }
 }

@@ -47,6 +47,7 @@ import CasesGrid from '../../../components/case-grid/CasesGrid.vue'
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-style: normal;
+    text-align: center;
     font-weight: 700;
   }
 
@@ -55,5 +56,17 @@ import CasesGrid from '../../../components/case-grid/CasesGrid.vue'
     flex-direction: column;
   }
 
+}
+
+
+@media only screen and (max-width: 824px) {
+  .cases {
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+
+  }
 }
 </style>

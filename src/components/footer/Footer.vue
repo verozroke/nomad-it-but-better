@@ -78,8 +78,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { title: "Главная", to: "/" },
   { title: "О нас", to: "/about-us" },
-  { title: "Отзывы", to: "/" },
-  { title: "Процесс работы", to: "/" },
+  { title: "Мастер-классы", to: "/courses" },
 ];
 
 const additionallyItems: NavItem[] = [

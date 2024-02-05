@@ -1,28 +1,39 @@
 <template>
   <ul class="header__row">
     <li>
-      <div class="title">NOMAD It</div>
+      <div class="title">CNomad</div>
     </li>
     <li>
-      <RouterLink @click="headerStore.burger = false" :to="{ name: 'Home' }" href=""><v-btn width="100%">Главная</v-btn>
+      <RouterLink
+        @click="headerStore.burger = false"
+        :to="{ name: 'Home' }"
+        href=""
+      ><v-btn width="100%">Главная</v-btn>
       </RouterLink>
     </li>
     <li>
-      <RouterLink @click="headerStore.burger = false" :to="{ name: 'AboutUs' }" href=""><v-btn width="100%">О нас</v-btn>
+      <RouterLink
+        @click="headerStore.burger = false"
+        :to="{ name: 'AboutUs' }"
+        href=""
+      ><v-btn width="100%">О нас</v-btn>
       </RouterLink>
     </li>
     <li>
-      <RouterLink @click="headerStore.burger = false" :to="{ name: 'Courses' }" href=""> <v-btn
-          width="100%">Мастер-классы</v-btn> </RouterLink>
+      <RouterLink
+        @click="headerStore.burger = false"
+        :to="{ name: 'Courses' }"
+        href=""
+      > <v-btn width="100%">Мастер-классы</v-btn> </RouterLink>
     </li>
-    <li>
+    <!-- <li>
       <RouterLink @click="headerStore.burger = false" :to="{ name: 'CasesDev' }" href=""> <v-btn width="100%">Кейсы
           DEV</v-btn> </RouterLink>
     </li>
     <li>
       <RouterLink @click="headerStore.burger = false" :to="{ name: 'CasesDesign' }" href=""> <v-btn width="100%">Кейсы
           Design</v-btn> </RouterLink>
-    </li>
+    </li> -->
   </ul>
 </template>
 

@@ -72,7 +72,7 @@ setTimeout(() => {
     <HomeCases />
     <!-- <HomeServices /> -->
     <!-- <HomeTeam /> -->
-    <HomeStages />
+    <!-- <HomeStages /> -->
   </div>
 </template>
 

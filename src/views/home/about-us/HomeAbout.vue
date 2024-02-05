@@ -1,5 +1,8 @@
 <template>
-  <div class="about">
+  <div
+    class="about"
+    id="about"
+  >
     <div class="about__container">
       <div class="about__info hidden">
         <div class="about__title">О нас</div>
@@ -10,6 +13,8 @@
           составляющей.
         </div>
         <v-btn
+          :size="headerStore.isMobile ? 'x-small' : ''"
+          class="about_button"
           @click="router.push('/about-us')"
           variant="outlined"
         >Читать далее</v-btn>
@@ -25,8 +30,10 @@
 </template>
 
 <script setup lang="ts">
+import { useHeaderStore } from '@/stores/HeaderStore';
 import { useRouter } from 'vue-router';
 
+const headerStore = useHeaderStore()
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -182,7 +189,7 @@ setTimeout(() => {
   .about {
 
     &__text {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     &__circle {
