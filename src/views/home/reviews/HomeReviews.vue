@@ -2,7 +2,6 @@
   <div class="reviews">
     <div class="reviews__container">
       <div class="reviews__title">Отзывы</div>
-      <div class="reviews__subtitle">c 2023</div>
       <v-carousel
         class="carousel"
         cycle
